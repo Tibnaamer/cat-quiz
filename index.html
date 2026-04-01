@@ -6,17 +6,29 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+      <div class='app'>
     <br />
     <h1>Cat Quiz</h1>
     <br />
     <p>Hi there, welcome to the Cat Quiz! Please press start to begin.</p>
+
+    <div class ='quiz'>
+    <h2 id="question"> Question Placeholder </h2>
+<div id="answer-button">
+    <button class="answer-btn"> Answer 1 </button>
+    <button class="answer-btn"> Answer 2 </button>
+    <button class="answer-btn"> Answer 3 </button>
+    <button class="answer-btn"> Answer 4 </button>
+</div>  
+
     <button
-      id="start-btn"
+    id="start-btn"
       onmouseover="this.style.backgroundColor = '#e0d0f0'"
-      onmouseout="this.style.backgroundColor = '#f5edfc'"
-    >
+      onmouseout="this.style.backgroundColor = '#f5edfc'"    >
       START
     </button>
     <div id="quiz-container" style="display: none"></div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
