@@ -19,3 +19,22 @@
   padding: 0;
   color: rgb(0, 0, 0);
 }
+
+#question {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.answer-btn {
+  height: 85px;
+  width: 700px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #34c1f9;
+  border: black solid 1px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
