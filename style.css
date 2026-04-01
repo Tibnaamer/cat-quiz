@@ -1,8 +1,3 @@
-h1 {
-  color: rgb(243, 59, 243);
-  text-align: center;
-}
-
 * {
   font-family: "Times New Roman", Times, serif;
   background-color: lightgray;
@@ -10,24 +5,17 @@ h1 {
   padding: 0;
 }
 
-p {
+.app {
+}
+
+.app h1 {
+  color: rgb(243, 59, 243);
+  text-align: center;
+}
+
+.app p {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: black;
-}
-
-#start-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5edfc;
-  text-box: black;
-  font-size: 20px;
-  border: 1px solid #000000;
-  border-radius: 2px;
-  color: #e226d9;
-  padding: 20px;
-  margin: 50px auto 0px auto;
-  width: 40%;
+  color: rgb(0, 0, 0);
 }
