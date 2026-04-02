@@ -1,3 +1,5 @@
+/* My code has been supported by using the Prettier code formatter extension */
+
 const questions = [
   {
     question: "Who has more bones in their body?",
