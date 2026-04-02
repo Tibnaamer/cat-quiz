@@ -5,9 +5,6 @@
   padding: 0;
 }
 
-.app {
-}
-
 .app h1 {
   color: rgb(243, 59, 243);
   text-align: center;
@@ -25,7 +22,7 @@
   color: rgb(0, 0, 0);
 }
 
-.answer-btn {
+.btn {
   height: 85px;
   width: 700px;
   display: block;
@@ -40,27 +37,40 @@
   cursor: pointer;
 }
 
-.answer-btn:hover {
+.btn:hover {
   background-color: #92c7f3;
   color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 
-.next-btn {
+#next-btn {
   height: 50px;
   width: 150px;
-  display: none;
+  display: block;
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #ffffff;
-  border: black solid 1px;
+  border: rgb(0, 0, 0) solid 1px;
   font-weight: bold;
   color: rgb(0, 0, 0);
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.next-btn:hover {
+#next-btn:hover {
   background-color: #92c7f3;
   color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.correct {
+  background-color: #58fb5d;
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336;
+  color: white;
 }
