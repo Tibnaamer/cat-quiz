@@ -9,7 +9,7 @@ const questions = [
       { text: "Rabbits", correct: false },
       { text: "Hamsters", correct: false },
     ],
-  },
+  }, // Cats have more bones than humans. Cats have approximately 230 - 250 bones, while an adult human has 206.
   {
     question: "On average, how many hours a day do cats sleep?",
     answers: [
@@ -18,7 +18,7 @@ const questions = [
       { text: "12 - 16 hours", correct: true },
       { text: "More than 16 hours", correct: false },
     ],
-  },
+  }, // Cats spend around 12 to 16 hours of their day sleeping; this high amount of rest is due to an evolutionary trait designed to conserve energy for hunting.
   {
     question: "Which domesticated Cat breed is the largest?",
     answers: [
@@ -36,7 +36,7 @@ const questions = [
       { text: "Benjamin Franklin", correct: false },
       { text: "Charles Darwin", correct: false },
     ],
-  },
+  }, // Sir Isaac Newton is often credited with inventing the cat flap, although this is likely a myth; it is believed he made it in order to prevent his Cats from interrupting light-sensitive experiments by scratching at his door.
   {
     question: "whose heart beats faster?",
     answers: [
@@ -45,7 +45,7 @@ const questions = [
       { text: "Dogs", correct: false },
       { text: "Hamster ", correct: true },
     ],
-  },
+  }, // A Cat's heart rate ranges from 140 to 220 beats per minute, while a hamster has a significantly faster resting heart rate, commonly ranging between 250 and 600 beats per minute.
   {
     question: "On average, how long do Cats live?",
     answers: [
@@ -54,7 +54,7 @@ const questions = [
       { text: "Around 15 years", correct: true },
       { text: "Around 25 years ", correct: false },
     ],
-  },
+  }, // On average, indoor Cats usually live between 12 and 20 years old. Outdoor cats typically don't live as long.
   {
     question: "What is a group of Cats called?",
     answers: [
@@ -63,7 +63,7 @@ const questions = [
       { text: "Cloup", correct: false },
       { text: "Clapers", correct: false },
     ],
-  },
+  }, // A group of Cats is known as a clowder.
   {
     question: "What is the top speed of a house cat?",
     answers: [
@@ -72,8 +72,9 @@ const questions = [
       { text: "14 - 19 mph", correct: false },
       { text: "20mph and above", correct: true },
     ],
-  },
+  }, // The top speed for most house cats is around 20 miles per hour; however, a cat's speed may vary depending on factors such as fitness, breed, health, and age.
 ];
+
 
 // Grabs elements from HTML to be used in JS
 const questionElement = document.getElementById("question");
