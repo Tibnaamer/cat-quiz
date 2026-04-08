@@ -1,4 +1,4 @@
-/* My code has been supported by using the Prettier code formatter extension */
+/* I have used the following extensions: Prettier - Code Formatter, Live Server, GitHub Copilot */
 
 const questions = [
   {
@@ -80,6 +80,9 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const startButton = document.getElementById("start-btn");
+const closeButton = document.getElementById("close-btn");
+const tutorialButton = document.getElementById("tutorial-btn");
+const tutorialDialog = document.getElementById("tutorial-dialog");
 
 // Variables to keep track of current question and score
 let currentQuestionIndex = 0;
@@ -168,4 +171,26 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-startQuiz();
+// Event listener for the start button
+startButton.addEventListener("click", () => {
+  startButton.style.display = "none";
+  document.querySelector(".quiz").style.display = "block";
+  startQuiz();
+});
+
+// Event listener for the tutorial button
+tutorialButton.addEventListener("click", () => {
+  tutorialDialog.showModal();
+});
+
+// Event listener to close the tutorial dialog when clicking outside of it
+tutorialDialog.addEventListener("click", (event) => {
+  if (event.target === tutorialDialog) {
+    tutorialDialog.close();
+  }
+});
+
+// Event listener for the close button in the tutorial dialog
+closeButton.addEventListener("click", () => {
+  tutorialDialog.close();
+});
