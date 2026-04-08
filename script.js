@@ -75,11 +75,11 @@ const questions = [
   }, // The top speed for most house cats is around 20 miles per hour; however, a cat's speed may vary depending on factors such as fitness, breed, health, and age.
 ];
 
-
 // Grabs elements from HTML to be used in JS
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const startButton = document.getElementById("start-btn");
 
 // Variables to keep track of current question and score
 let currentQuestionIndex = 0;
@@ -131,6 +131,41 @@ function selectAnswer(e) {
   } else {
     selectedBtn.classList.add("incorrect");
   }
+  // Disable all buttons and show the correct answer
+  Array.from(answerButtons.children).forEach((button) => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    }
+    button.disabled = true;
+  });
+  nextButton.style.display = "block";
 }
+
+// Function to show the final score after the quiz is completed
+function showScore() {
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+}
+
+// Function to handle the next button click, showing the score if it's the end of the quiz
+function handleNextButton() {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    showQuestion();
+  } else {
+    showScore();
+  }
+}
+
+// Event listener for the next button to handle quiz progression and restarting
+nextButton.addEventListener("click", () => {
+  if (currentQuestionIndex < questions.length) {
+    handleNextButton();
+  } else {
+    startQuiz();
+  }
+});
 
 startQuiz();
