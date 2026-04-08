@@ -22,6 +22,36 @@
   color: rgb(0, 0, 0);
 }
 
+#tutorial-btn {
+  height: 50px;
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  border: rgb(0, 0, 0) solid 1px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn {
+  height: 50px;
+  width: 150px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  border: rgb(0, 0, 0) solid 1px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .btn {
   height: 85px;
   width: 700px;
@@ -37,10 +67,14 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
   background-color: #92c7f3;
   color: rgb(255, 255, 255);
   transition: 0.3s;
+}
+
+.btn:disabled {
+  cursor: no-drop;
 }
 
 #next-btn {

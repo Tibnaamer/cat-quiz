@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <title>Cat Quiz</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
     <div class="app">
       <br />
@@ -17,6 +19,24 @@
         </strong>
       </p>
       <br />
+
+      <button id="tutorial-btn"> Tutorial </button> 
+      <div id="tutorial" style="display: none;">
+        <p>
+          <strong>
+            This is a multiple-choice quiz. For each question, select the answer
+            you think is correct and then click the "Next" button to proceed to
+            the next question. At the end of the quiz, you'll see your score.
+          </strong>
+        </p>
+      </div>
+
+              <button id="start-btn"> Start Quiz </button> 
+      <div id="start" style="display: none;">
+        </div>
+        
+
+
       <div class="quiz">
         <h2 id="question">Question Placeholder</h2>
         <br />
@@ -31,4 +51,5 @@
     </div>
     <script src="script.js"></script>
   </body>
+
 </html>
