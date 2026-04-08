@@ -4,40 +4,52 @@
   <head>
     <title>Cat Quiz</title>
     <meta charset="UTF-8" />
+       <!-- CSS Stylesheet link -->
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
+    <header class="header">
+      <h1>Cat Quiz</h1>
+    </header>
+
+    <main>
+      <!-- Introduction elements -->
     <div class="app">
       <br />
-      <h1>Cat Quiz</h1>
-      <br />
       <p>
-        <strong>
           Hi there, welcome to the Cat Quiz! This quiz will test your knowledge
-          about cats. Good luck!
-        </strong>
+          about cats. Good luck! If you need a refresher on how to take the quiz, 
+          click the <strong> "Tutorial" </strong> button below for instructions.
       </p>
-      <br />
-
+<br />
+      <!-- Tutorial elements -->
       <button id="tutorial-btn"> Tutorial </button> 
-      <div id="tutorial" style="display: none;">
+      <dialog id="tutorial-dialog">
+        <div class="tutorial-popup">
+          <h2>Tutorial</h2>
+          <button id="close-btn">X</button>
+        <h2>How to Take the Quiz</h2>
+         <br />
         <p>
           <strong>
             This is a multiple-choice quiz. For each question, select the answer
             you think is correct and then click the "Next" button to proceed to
-            the next question. At the end of the quiz, you'll see your score.
+            the next question. Green answers are correct, while red answers are incorrect. 
+            At the end of the quiz, you'll see your score. Good luck!
           </strong>
         </p>
       </div>
+     </div>
 
+      <!-- Start elements -->
+        <div id="start" style="display: none;"></div>
               <button id="start-btn"> Start Quiz </button> 
-      <div id="start" style="display: none;">
         </div>
-        
 
 
-      <div class="quiz">
+    <!-- Quiz elements -->
+      <div class="quiz" style="display: none;">
         <h2 id="question">Question Placeholder</h2>
         <br />
         <div id="answer-buttons">
@@ -49,7 +61,12 @@
         <button id="next-btn">Next</button>
       </div>
     </div>
+
+     <!-- JavaScript link -->
     <script src="script.js"></script>
+    </main>
+
+
   </body>
 
 </html>
