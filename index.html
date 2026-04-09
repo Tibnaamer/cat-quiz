@@ -26,19 +26,24 @@
       <!-- Tutorial elements -->
       <button id="tutorial-btn"> Tutorial </button> 
       <dialog id="tutorial-dialog">
+         <button id="close-btn">X</button>
         <div class="tutorial-popup">
-          <h2>Tutorial</h2>
-          <button id="close-btn">X</button>
+          <h1>Tutorial</h1>
         <h2>How to Take the Quiz</h2>
          <br />
         <p>
-          <strong>
-            This is a multiple-choice quiz. For each question, select the answer
+            This is a randomised multiple-choice quiz. For each question, select the answer
             you think is correct and then click the "Next" button to proceed to
-            the next question. Green answers are correct, while red answers are incorrect. 
-            At the end of the quiz, you'll see your score. Good luck!
-          </strong>
-        </p>
+            the next question. 
+            <strong class="green"> Green </strong> answers are correct, 
+            while <strong class="red">  Red </strong> answers are incorrect. 
+            </p>
+            <br>
+            <p> 
+            You can only select one answer per question, so choose carefully! After you select an answer, 
+            a fun fact about cats will be displayed below. There are only 8 questions in total, and each 
+            question is only worth 1 point. At the end of the quiz, you'll see your score. Good luck!
+       </p>
       </div>
      </div>
 
@@ -58,6 +63,9 @@
           <button class="btn">Answer 3</button>
           <button class="btn">Answer 4</button>
         </div>
+
+        <!-- Fun fact element -->
+        <p id="fact" style="display: none;"></p>
         <button id="next-btn">Next</button>
       </div>
     </div>
