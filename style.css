@@ -23,14 +23,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(207, 252, 229);
   border: rgb(0, 0, 0) solid 1px;
   padding: 20px;
   z-index: 1000;
 }
 
+.tutorial-popup p .red {
+  color: #f44336;
+}
+
+.tutorial-popup p .green {
+  color: #58fb5d;
+}
+
 #close-btn {
-  height: 30px;
+  height: 40px;
   width: 80px;
   display: block;
   margin: 20px auto;
@@ -42,6 +50,7 @@
   color: rgb(255, 255, 255);
   border-radius: 5px;
   cursor: pointer;
+  float: right;
 }
 
 #question {
@@ -130,6 +139,14 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+#fact {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-top: 20px;
+  margin-top: 20px;
 }
 
 #next-btn:hover {
