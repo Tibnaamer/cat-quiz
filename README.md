@@ -44,10 +44,22 @@ This Cat quiz was made as I love Cats and I want to test the knowledge of users.
 
 # Features
 
+### The website exists on only one page and has multiple features that are visible to users. Please read below a guide on the website's navigation and features:
+
+* For users who are unsure of how the game works, they can select the 'Tutorial' button, which will make a pop-up appear that will explain how the game works.
+
+![Tutorial Button](Assets/Images/TutorialButton.png)
+
+* When the user selects the start button, it will start the game and show the first question.
+* The Tutorial pop-up informs users on how to play.
+
+![Tutorial Pop-up Guide](Assets/Images/TutorialPop-upGuide.png)
+
+* In the centre of the page, users will see a 'Start' button allowing them to start the game.
+
+![Start Button](Assets/Images/StartButton.png)
+
 - WIP to be added
-
-![Start Button](StartButton.png)
-
 
 <br>
 
