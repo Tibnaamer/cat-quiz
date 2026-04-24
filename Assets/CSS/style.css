@@ -164,3 +164,10 @@
   background-color: #f44336;
   color: white;
 }
+
+/* Medium devices (landscape tablets, 768px and fewer) */
+@media only screen and (max-width: 768px) {
+  .btn {
+    width: 100px;
+  }
+}
