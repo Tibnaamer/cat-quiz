@@ -45,7 +45,7 @@
   padding: 10px 20px;
   font-size: 16px;
   background-color: #000000;
-  border: rgb(0, 0, 0) solid 1px;
+  border: rgb(207, 252, 229) solid 1px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   border-radius: 5px;
@@ -169,5 +169,8 @@
 @media only screen and (max-width: 768px) {
   .btn {
     width: 100px;
+  }
+  #tutorial-dialog {
+    width: 350px;
   }
 }

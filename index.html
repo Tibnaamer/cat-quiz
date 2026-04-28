@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <title>Cat Quiz</title>
 
-        <!-- meta tags  -->
-   <!-- supports all languages and special characters -->
-   <meta charset="UTF-8">
-   <!-- To account for different screen sizes, such as mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags  -->
+    <!-- supports all languages and special characters -->
+    <meta charset="UTF-8" />
+    <!-- To account for different screen sizes, such as mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Author of the page -->
-    <meta name="author" content="Talha">
+    <meta name="author" content="Talha" />
     <!-- Brief summary of the page -->
-    <meta 
-    name="description" 
-    content="A Cat quiz for users to test their knowledge.">
+    <meta
+      name="description"
+      content="A Cat quiz for users to test their knowledge."
+    />
     <!-- Keywords to help with SEO -->
-    <meta 
-    name="keywords" 
-    content="Cat Quiz. Quiz. Cats. Animal. Animal Quiz. Fun. Knowledge.">
+    <meta
+      name="keywords"
+      content="Cat Quiz. Quiz. Cats. Animal. Animal Quiz. Fun. Knowledge."
+    />
 
-       <!-- CSS Stylesheet link -->
+    <!-- CSS Stylesheet link -->
     <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css" />
   </head>
 
@@ -31,47 +32,49 @@
 
     <main>
       <!-- Introduction elements -->
-    <div class="app">
-      <br />
-      <p>
-          Hi there, welcome to the Cat Quiz! This quiz will test your knowledge
-          about cats. Good luck! If you need a refresher on how to take the quiz, 
-          click the <strong> "Tutorial" </strong> button below for instructions.
-      </p>
-<br />
-      <!-- Tutorial elements -->
-      <button id="tutorial-btn"> Tutorial </button> 
-      <dialog id="tutorial-dialog">
-         <button id="close-btn">X</button>
-        <div class="tutorial-popup">
-          <h1>Tutorial</h1>
-          <br>
-        <h2>How to Take the Quiz</h2>
-         <br />
+      <div class="app">
+        <br />
         <p>
-            This is a randomised multiple-choice quiz. For each question, select the answer
-            you think is correct and then click the "Next" button to proceed to
-            the next question. 
-            <strong class="green"> Green </strong> answers are correct, 
-            while <strong class="red">  Red </strong> answers are incorrect. 
+          Hi there, welcome to the Cat Quiz! This quiz will test your knowledge
+          about cats. Good luck! If you need a refresher on how to take the
+          quiz, click the <strong> "Tutorial" </strong> button below for
+          instructions.
+        </p>
+        <br />
+        <!-- Tutorial elements -->
+        <button id="tutorial-btn">Tutorial</button>
+        <dialog id="tutorial-dialog">
+          <button id="close-btn">X</button>
+          <div class="tutorial-popup">
+            <h1>Tutorial</h1>
+            <br />
+            <h2>How to Take the Quiz</h2>
+            <br />
+            <p>
+              This is a randomised multiple-choice quiz. For each question,
+              select the answer you think is correct and then click the "Next"
+              button to proceed to the next question.
+              <strong class="green"> Green </strong> answers are correct, while
+              <strong class="red"> Red </strong> answers are incorrect.
             </p>
-            <br>
-            <p> 
-            You can only select one answer per question, so choose carefully! After you select an answer, 
-            a fun fact about cats will be displayed below. There are only 8 questions in total, and each 
-            question is only worth 1 point. At the end of the quiz, you'll see your score. Good luck!
-       </p>
+            <br />
+            <p>
+              You can only select one answer per question, so choose carefully!
+              After you select an answer, a fun fact about cats will be
+              displayed below. There are only 8 questions in total, and each
+              question is only worth 1 point. At the end of the quiz, you'll see
+              your score. Good luck!
+            </p>
+          </div>
+        </dialog>
       </div>
-     </div>
 
       <!-- Start elements -->
-        <div id="start" style="display: none;"></div>
-              <button id="start-btn"> Start Quiz </button> 
-        </div>
+      <div id="start" style="display: none"></div>
+      <button id="start-btn">Start Quiz</button>
 
-
-    <!-- Quiz elements -->
-      <div class="quiz" style="display: none;">
+      <!-- Quiz elements -->
+      <div class="quiz" style="display: none">
         <h2 id="question">Question Placeholder</h2>
         <br />
         <div id="answer-buttons">
@@ -82,16 +85,12 @@
         </div>
 
         <!-- Fun fact element -->
-        <p id="fact" style="display: none;"></p>
+        <p id="fact" style="display: none"></p>
         <button id="next-btn">Next</button>
       </div>
-    </div>
 
-     <!-- JavaScript link -->
-    <script src="Assets/JS/script.js"></script>
+      <!-- JavaScript link -->
+      <script src="Assets/JS/script.js"></script>
     </main>
-
-
   </body>
-
 </html>
