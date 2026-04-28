@@ -59,7 +59,7 @@ This Cat quiz was made as I love Cats and I want to test the knowledge of users.
 
 ![Start Button](Assets/Images/StartButton.png)
 
-- Once you have completed the quiz you will see your total score as well as a 'Play Again' button allowing users to restart the quiz.
+- Once you have completed the quiz, you will see your total score as well as a 'Play Again' button allowing users to restart the quiz.
 
 ![Total Score](Assets/Images/TotalScore.png)
 
@@ -76,17 +76,13 @@ This Cat quiz was made as I love Cats and I want to test the knowledge of users.
 
 <br>
 
-# Testing
-
-- WIP to be added
-
-<br>
-
 # Validation
 
 ### HTML
 
-During the creation of my website I did encounter errors, for example, in my HTML file I encounted the following error:
+In order to confirm the correct functionality, responsiveness and appearance of my website, I used an online validator in order to test my code.
+
+During the creation of my website, I encountered errors. For example, in my HTML file, I encountered the following error:
 
 ![HTML Error](Assets/Images/HTMLError.png)
 
@@ -94,13 +90,13 @@ I amended this particular issue by ensuring that my <dialog> tag was closed corr
 
 ![HTML Error Fix](Assets/Images/HTMLErrorFix.png)
 
-This is how I ensured that my HTML file remained error free.
+This is how I ensured that my HTML file remained error-free.
 
 ![HTML Checker Results](Assets/Images/HTMLCheckerResults.png)
 
 ### CSS
 
-Another error I encounted was in my CSS file:
+Another error I encountered was in my CSS file:
 
 ![CSS Error](Assets/Images/CSSError.png)
 
@@ -108,13 +104,13 @@ I amended this error by proofreading my CSS file and adding '20px;' in the corre
 
 ![CSS Error Fix](Assets/Images/CSSErrorFix.png)
 
-This is how I ensured that my CSS file remained error free.
+This is how I ensured that my CSS file remained error-free.
 
 ![CSS Checker Results](Assets/Images/CSSCheckerResults.png)
 
 ### JS
 
-The final error I encounted was in my JS file:
+The final error I encountered was in my JS file:
 
 ![JS Error](Assets/Images/JSError.png)
 
@@ -122,7 +118,7 @@ I was able to fix this error by proofreading my JS file and realising 'tutorialD
 
 ![Amended JS Error](Assets/Images/AmendedJSError.png)
 
-Through the use of various validators I was able to ensure that code was free from errors and efficient.
+Through the use of various validators, I was able to ensure that the code was free from errors and efficient.
 
 <br>
 
@@ -130,11 +126,24 @@ Through the use of various validators I was able to ensure that code was free fr
 
 The website was tested using Lighthouse, please find the report below:
 
-- WIP to be added
+![Lighthouse Score](Assets/Images/LighthouseScore.png)
+
+Lighthouse tests the performance, accessibility, best practices and SEO of a website.
+
+I also ensured that the website is responsive regardless of what device users use to access the website, for example:
+
+On a laptop screen, the website will feature larger buttons.
+While on a mobile phone, the website screen and buttons will be smaller.
+
+<br>
 
 # Deployment
 
-- WIP to be added
+### The site was deployed to GitHub Pages, the steps I followed are as follows:
+
+- While in the GitHub repository, navigate to the Settings tab
+- Inside the source section, select the Main Branch and click the "Save" button
+- Once the page has been refreshed and there are no issues, this will indicate successful deployment.
 
 <br>
 
